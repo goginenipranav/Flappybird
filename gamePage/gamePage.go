@@ -122,6 +122,10 @@ func main() {
 				Apples[io].posX = 800
 				Apples[io].posY = int32(rand.Intn(int(screenHeight-40-50)) + 50)
 				score--
+				lives-- // Decrease lives when an apple is missed
+				if score < 0 {
+					score = 0
+				}
 			}
 			birdCollisionRect := rl.NewRectangle(float32(xCoords)+15, float32(yCoords)+10, 20, 10)
 			if rl.CheckCollisionRecs(birdCollisionRect, rl.NewRectangle(float32(currentApple.posX)+10, float32(currentApple.posY)+10, float32(currentApple.width)-20, float32(currentApple.height)-20)) {
