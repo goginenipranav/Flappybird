@@ -134,7 +134,7 @@ func main() {
 	rl.InitWindow(screenWidth, screenHeight, "Flappy Bird")
 
 	// Load texture
-	texture := rl.LoadTexture("Icon.png")
+	texture := rl.LoadTexture("icon2.png")
 	if texture.ID == 0 {
 		rl.TraceLog(rl.LogError, "Failed to load texture")
 		return
@@ -242,7 +242,7 @@ func main() {
 		rl.DrawText("Continue Game", buttonX+25, buttonY+buttonHeight+paddingY+15, 20, rl.White)
 
 		rl.DrawRectangle(buttonX, buttonY+buttonHeight+paddingY*2+buttonHeight, buttonWidth, buttonHeight, rl.Blue)
-		rl.DrawText("Leadership", buttonX+50, buttonY+buttonHeight+paddingY*2+buttonHeight+15, 20, rl.White)
+		rl.DrawText("Leaderboard", buttonX+50, buttonY+buttonHeight+paddingY*2+buttonHeight+15, 20, rl.White)
 
 		// Draw username text box
 		usernameBox.Draw()

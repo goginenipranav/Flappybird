@@ -90,7 +90,7 @@ func main() {
 
 	// Fetch high score from the database
 	highScore := getHighScore()
-	bgTexture := rl.LoadTexture("../assets/bgsky.png")
+	bgTexture := rl.LoadTexture("../assets/bg (1).png")
 
 	// Load the apple image
 	appleImage := rl.LoadImage("../apple10.png")
